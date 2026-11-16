@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Book</h1>
+        <div class="btn-group">
+            <button id="addContactBtn">Add Contact</button>
+            <button id="filterFavBtn">Show Favorites Only</button>
+        </div>
+        <div id="contactList" class="contact-list">
+        </div>
+    </div>
+
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Contact</h2>
+            <label>Name: <input type="text" id="nameInput"></label>
+            <label>Phone: <input type="text" id="phoneInput"></label>
+            <label>Email: <input type="text" id="emailInput"></label>
+            <label>Address: <input type="text" id="addrInput"></label>
+            <button id="saveBtn">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
